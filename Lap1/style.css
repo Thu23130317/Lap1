@@ -1,0 +1,102 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+}
+
+#book-form, table {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+#search-box {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: box-shadow 0.3s;
+}
+
+#search-box:hover, #search-box:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input[type="text"], select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.success-message {
+    text-align: center;
+    color: green;
+    background-color: #e0f7e0; /* Màu nền cho thông báo thành công */
+    border: 1px solid #b2dfb2; /* Viền cho thông báo thành công */
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px 0;
+    display: none; 
+}
