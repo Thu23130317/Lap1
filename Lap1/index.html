@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Thông Tin Sách</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Quản Lý Thông Tin Sách</h1>
+
+    <form id="book-form">
+        <label for="book-title">Tên sách:</label>
+        <input type="text" id="book-title" name="book-title" placeholder="Nhập tên sách" required>
+        
+        <label for="author">Tác giả:</label>
+        <input type="text" id="author" name="author" placeholder="Nhập tên tác giả" required>
+        
+        <label for="genre">Thể loại:</label>
+        <input type="text" id="genre" name="genre" placeholder="Nhập thể loại" required>
+        
+        <label for="status">Tình trạng:</label>
+        <select id="status" name="status" required>
+            <option value="Còn">Còn</option>
+            <option value="Hết hàng">Hết hàng</option>
+            <option value="Đặt trước">Đặt trước</option>
+        </select>
+        
+        <button type="submit" id="submit-btn">Thêm Sách</button>
+        <div id="success-message" class="success-message"></div>
+    </form>
+
+    <input type="text" id="search-box" placeholder="Tìm kiếm sách...">
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Tên sách</th>
+                <th>Tác giả</th>
+                <th>Thể loại</th>
+                <th>Tình trạng</th>
+            </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
